@@ -1,0 +1,19 @@
+
+:root {
+    /* Forest Whisper Color Variables */
+    --primary: #20bf6b !important; /* Forest green for primary elements */
+    --primary-hover: #0b4f6c !important; /* Darker green-blue for hover states */
+    --primary-focus: rgba(32, 191, 107, 0.2) !important; /* Translucent forest green for focus states */
+    --background-color: #d1f2eb !important; /* Light mint background color */
+    --solo-scribe-color: #26de81 !important; /* Bright green for brand text */
+    --sidebar-bg-color: #0b4f6c !important; /* Dark green-blue background color for the sidebar */
+    --sidebar-text-color: #d1f2eb !important; /* Light mint text color for sidebar items */
+    --sidebar-hover-text-color: #26de81 !important; /* Lighter green for sidebar items on hover */
+    --file-upload-wrapper-border: 2px dashed #20bf6b !important; /* Forest green border for the file upload wrapper */
+    --file-upload-wrapper-bg-color: #d1f2eb !important; /* Very light mint background for the file upload area */
+    --file-upload-label-bg-color: #26de81 !important; /* Soft green background for the upload label */
+    --file-upload-label-color: #0b4f6c !important; /* Dark green-blue text for the upload label */
+    --file-upload-instructions-color: #0b4f6c !important; /* Dark green-blue for instructional text */
+    /* Remaining layout variables are unchanged and therefore omitted for brevity */
+  }
+  

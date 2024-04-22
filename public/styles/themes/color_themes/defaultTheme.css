@@ -1,0 +1,19 @@
+/* Default Theme Color Variables */
+
+:root {
+    --primary: #0b8aa1 !important; /* Vibrant blue for primary elements */
+    --primary-hover: #08697a !important; /* Darker shade for hover states */
+    --primary-focus: rgba(11, 138, 161, 0.2) !important; /* Translucent vibrant blue for focus states */
+    --background-color: #e0f4f7 !important; /* Very light blue background color */
+    --solo-scribe-color: #0dbcc1 !important; /* Bright cyan for brand text */
+    --sidebar-bg-color: #08697a !important; /* Darker blue background color for the sidebar */
+    --sidebar-text-color: #e0f4f7 !important; /* Light blue text color for sidebar items */
+    --sidebar-hover-text-color: #0dbcc1 !important; /* Bright cyan for sidebar items on hover */
+    --file-upload-wrapper-border: 2px dashed #0b8aa1 !important; /* Vibrant blue border for the file upload wrapper */
+    --file-upload-wrapper-bg-color: #e0f4f7 !important; /* Very light blue background for the file upload area */
+    --file-upload-label-bg-color: #0dbcc1 !important; /* Soft cyan background for the upload label */
+    --file-upload-label-color: #08697a !important; /* Darker blue text for the upload label */
+    --file-upload-instructions-color: #08697a !important; /* Darker blue for instructional text */
+    /* Other layout variables can be retained from previous themes or customized as needed */
+  }
+  

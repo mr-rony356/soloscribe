@@ -1,0 +1,299 @@
+<!-- Relative Path: ../public/index.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/root.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/sidebar.css">
+    <link rel="stylesheet" href="/styles/recording.css">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/mobile.css" media="screen and (max-width: 767px)">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-3o+FU9p7jFTu9WFC6z7DblRuAaJbTxaBfJJO7VQfZJ9vnW5WMrgzHqJ5EjKRJbkkiGc4tZG+Z3V4BTKBhXunyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>SoLoScribe</title>
+</head>
+<body>
+
+
+
+    <!-- ========================= Navbar Layout ========================= -->
+    
+    
+    
+    <header>
+        <nav class="container-fluid">
+            <ul>
+                <div id="sidebarToggle" class="button-section">
+                    <button onclick="toggleContainer('sidebar')" class="mobile-sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </ul>
+            <ul>
+                <li class="solo-scribe"><strong>SoLoScribe</strong></li>
+            </ul>
+            <ul>
+                <div id="newTranButton" class="button-section">
+                    <button onclick="toggleContainer('newTranscription')">New Transcription</button>
+                </div>
+            </ul>
+            
+            
+            
+        </nav>
+    </header>
+
+    <div class="trans-controls">
+        <button id="copyToClipboardButton">
+            <i class="fa-regular fa-copy"></i>
+        </button>
+        <button id="shareTranscriptButton">
+            <i class="fa-solid fa-share-nodes"></i>
+        </button>
+        <div class="dropdown">
+            <button id="Summarize" class="dropbtn">
+              <i class="fa-regular fa-rectangle-list"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#" data-option="summarize">Summarize</a>
+              <a href="#" data-option="quickPoints">Quick Points</a>
+            </div>
+          </div>
+        <button id="sendToNotionButton">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+        <button id="deleteTranscriptButton">
+            <i class="fa-solid fa-trash-can"></i>
+        </button>
+        <button id="viewSummary">
+            <i class="fa-solid fa-eye"></i>
+        </button>
+        
+    </div>
+
+    <!-- ========================= Sidebar Layout ========================= -->
+    <div class="sidebar-cover"></div>
+
+
+
+    <div id="sidebar" class="sidebar">
+        <p class="solo-scribes"><strong><i class="fa-solid fa-microphone"></i></i> SoLoScribe</strong></p>
+
+        <div class="menu-header">
+            <div id="profileData" class="profile-section">
+                <img id="profilePicture" class="profile-image" src="" alt="Profile Picture" style="display:absolute;">
+                <div id="userInfo">
+                    <span id="first-name"></span>
+                    <span id="last-name"></span>
+                    <p id="email"></p>
+                    <!-- <div id="logButtons" class="button-section">
+                        <button id="logoutBtn" class="button" style="display:none;">Logout</button>
+                        <button id="loginBtn" class="button loginBtn">Login/Signup</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="transcriptionList" class="trans-list">
+            <div id="transcriptions-list"></div>
+        </div>
+
+        <div id="settingsButton" class="settings-button">
+            <button onclick="toggleContainer('settings')">Settings</button>
+        </div>
+        
+    </div>
+
+  
+
+
+
+    <!-- ========================= Login/Signup Layout ========================= -->
+
+
+
+    <!-- Login Popup -->
+    <div id="login-popup" class="popup hidden">
+        <h2>Login</h2>
+        <form id="login-form" class="auth-form">
+            <div class="input-group">
+                <span class="input-icon"><i class="fas fa-user"></i></span>
+                <input type="email" id="login-email" placeholder="Email" autocomplete="username">
+            </div>
+            <div class="input-group">
+                <span class="input-icon"><i class="fas fa-lock"></i></span>
+                <input type="password" id="login-password" placeholder="Password" autocomplete="current-password">
+            </div>
+            <button type="submit" class="auth-button">Login</button>
+        </form>
+        <button id="google-login-button" class="google-button">
+            <img src="images/googleSignin.png" alt="Sign in with Google">
+        </button>
+        <button id="goto-signup" class="switch-button">Switch to Signup</button>
+    </div>
+
+    <!-- Signup Popup -->
+    <div id="signup-popup" class="popup hidden">
+        <h2>Signup</h2>
+        <form id="signup-form" class="auth-form">
+            <div class="input-group">
+                <span class="input-icon"><i class="fas fa-user"></i></span>
+                <input type="text" id="signup-first-name" placeholder="First Name">
+            </div>
+            <div class="input-group">
+                <span class="input-icon"><i class="fas fa-user"></i></span>
+                <input type="text" id="signup-last-name" placeholder="Last Name">
+            </div>
+            <div class="input-group">
+                <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                <input type="email" id="signup-email" placeholder="Email" autocomplete="username">
+            </div>
+            <div class="input-group">
+                <span class="input-icon"><i class="fas fa-lock"></i></span>
+                <input type="password" id="signup-password" placeholder="Password" autocomplete="new-password">
+            </div>
+            <button type="submit" class="auth-button">Signup</button>
+        </form>
+        <button id="google-login-button" class="google-button">
+            <img src="images/googleSignup.png" alt="Sign up with Google">
+        </button>
+        <button id="goto-login" class="switch-button">Switch to Login</button>
+    </div>
+
+
+
+  
+
+    <!-- ====================== Main Container Layout ====================== -->
+
+
+
+      <div id="mainContainer">
+        <div id="newTranscription" class="mainContainers">
+            <main class="container">
+                <div class="transcription-controls">
+                    <button id="upload-file" class="section-btn" data-target="upload-section">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2716/2716054.png" alt="Upload"> Upload File
+                    </button>
+                    <button id="from-podcast-library" class="section-btn" data-target="podcast-link-form">
+                        <img src="https://cdn-icons-png.flaticon.com/512/10829/10829189.png" alt="Podcast"> From Podcast Library
+                    </button>
+                    <button id="from-youtube-link" class="section-btn" data-target="youtube-link-form">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube"> From YouTube Link
+                    </button>
+                    <button id="record-audio" class="section-btn" data-target="record-form">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4675/4675209.png" alt="Record Audio"> Record Audio
+                    </button>
+                </div>
+        
+                <div id="inputSelectionContainer">
+
+                    <!-- Upload Section -->
+                    <div id="upload-section" class="form-section hidden">
+                        <!-- Upload form content goes here -->
+                        <div id="inputContainer">
+                            <section class="upload-section">
+                                <h2>Hey Solo, Upload Audio/Video for Transcription</h2>
+                                <div class="file-upload-wrapper" id="drag-drop-area">
+                                    <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+                                        <input type="file" name="file" id="file-upload" accept="audio/*, video/*" hidden>
+                                        <label for="file-upload" class="file-upload-label">
+                                            Drag & drop a file here, or <span class="file-upload-btn">Select a file</span>
+                                        </label>
+                                        <p class="file-upload-instructions">
+                                            Supported file formats: .mp3, .mp4, .m4a, .wav, .webm, .mpeg, .mpga
+                                        </p>
+                                    </form>
+                                    <div id="file-list"></div>
+                                    <button id="transcribe-now-btn">Transcribe Now</button>
+                                </div>
+            
+                            </section>
+                        </div>
+                    </div>
+
+
+                    <!-- YouTube Link Form -->
+                    <div id="youtube-link-form" class="form-section hidden">
+                        <!-- Upload form content goes here -->
+                        <h2>Hey Solo, Add audio from a YouTube video</h2>
+                        <form class="youtube-link-form hidden" id="youtube-form">
+                            <label for="youtube-link">Add audio from a YouTube video</label>
+                            <input type="text" id="youtube-link" name="youtube-link" placeholder="E.g., https://www.youtube.com/watch?v=xxxxxx" required>
+                            <button type="submit" class="youtube-submit-btn">Transcribe YouTube Audio</button>
+                          </form>
+                    </div>
+
+
+                    <!-- Podcast Link Form -->
+                    <div id="podcast-link-form" class="form-section hidden">
+                        <!-- Podcast form content goes here -->
+                        <h2>Hey Solo, Add audio from a Podcast</h2>
+                    </div>
+
+
+                    <!-- Record Form -->
+                    <div id="record-form" class="form-section hidden">
+                        <!-- Record form content goes here -->
+                <h2>Hey Solo, Record Audio</h2>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+          <!-- Individual Transcription Container -->
+        <div id="individualTranscription" class="mainContainers" style="display: none;">
+          <h2>Transcription Container</h2>
+          
+        </div>
+        <div id="summaryDisplay"></div>
+        
+        
+        
+        <!-- Settings Container -->
+        <div id="settings" class="mainContainers" style="display: none;">
+        <h2>Settings Container</h2>
+        </div>
+
+      </div>
+
+
+
+<!-- ========================= Scripts ========================= -->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+  <!-- Firebase Authentication -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+  <!-- Firebase Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  
+  <!-- Add the Firebase Storage SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+
+    <!-- Your Firebase Initialization Script -->
+
+<!-- Your Firebase Initialization Script -->
+<!-- <script type="module" src="/recording.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+
+<script type="module" src="/userState.js"></script>
+<script type="module" src="/firebase.js"></script>
+<script type="module" src="/login.js"></script>
+<script type="module" src="/whisper.js"></script>
+
+
+    
+</body>
+</html>

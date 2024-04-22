@@ -1,0 +1,244 @@
+
+
+/* Main sidebar styling */
+.sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 250px !important; /* Adjusted for a slimmer sidebar */
+    background-color: #fff !important; /* White background for a clean look */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1) !important;
+    z-index: 1000 !important; /* Ensure sidebar is above other content */
+    overflow: visible !important; /* Hide horizontal overflow */
+    white-space: nowrap !important; /* Prevent wrapping of sidebar items */
+    padding:15px; /* Adjust as needed */
+    margin: 0 !important;
+height: 100vh;
+  }
+  .solo-scribes{
+    color: #1774ff;
+    text-align: center;
+    cursor: pointer;
+  }
+  /* Expanded sidebar on hover */
+  .sidebar:hover {
+    width: 250px !important; /* Expand sidebar width on hover */
+  }
+  
+
+  
+  /* Sidebar labels */
+  .sidebar-label {
+    display: none !important; /* Hide labels by default */
+    font-family: Arial, sans-serif !important;
+    font-size: 14px !important;
+    color: #555 !important;
+  }
+  
+  /* Show label on hover */
+  .sidebar:hover .sidebar-label {
+    display: inline-block !important; /* Show labels when sidebar is expanded */
+  }
+  
+  /* Sidebar items */
+  .sidebar-item {
+    display: flex !important;
+    align-items: center !important; /* Center items vertically */
+    padding: 10px 5px !important;
+    transition: background-color 0.3s ease-in-out !important;
+  }
+  
+  /* Hover state for sidebar items */
+  .sidebar-item:hover {
+    background-color: #f4f4f4 !important; /* Light grey background on hover */
+  }
+  
+  /* Sidebar icons */
+  .sidebar-icon {
+    margin-right: 10px !important; /* Space between icon and label */
+  }
+  
+  /* Adjustments for when sidebar is closed */
+  .sidebar.closed .sidebar-label {
+    display: none !important;
+  }
+  
+
+/* ========== User Section in Sidebar ========== */
+
+
+.profile-section {
+    margin-bottom: 0px;
+    margin-top: 0px !important;
+
+
+}
+
+#profilePicture {
+    border-radius: 50% !important; /* Makes the image a circle */
+    width: 40px !important; /* Adjust as needed */
+    height: 40px !important; /* Adjust as needed */
+
+}
+
+#userInfo p {
+    margin: 0px 0 !important; /* Adjust as needed */
+}
+
+#first-name {
+    padding-top: 10px !important; /* Adjust as needed */
+}
+#email {
+    white-space: nowrap !important; /* Prevents the text from wrapping onto the next line */
+    overflow: hidden !important; /* Hides the overflow */
+    text-overflow: ellipsis !important; /* Adds an ellipsis when the text overflows */
+    width: 100% !important; /* Ensures the width fits the container */
+}
+
+#logoutBtn, #loginBtn {
+    background-color: #1774ff; /* Green background */
+    border: none !important; /* Removes border */
+    color: white !important; /* White text */
+    text-align: center !important; /* Centers the text */
+    text-decoration: none !important; /* Removes underline */
+    font-size: 14px !important; /* Smaller font size */
+    margin: 4px 2px !important;
+    transition-duration: 0.4s !important; /* Duration of the hover effect */
+    cursor: pointer !important; /* Changes the cursor when you hover over the button */
+}
+
+#logoutBtn:hover, #loginBtn:hover {
+    background-color: #245dd8 !important; /* Changes the background color when you hover over the button */
+}
+
+/* ========== Transcriptions in Sidebar ========== */
+
+#newTranButton button {
+    position: relative !important;
+    top: 10px !important; /* Adjust as needed */
+    background-color: #1774ff; /* Green background */
+    border: none !important; /* Removes border */
+    color: white !important; /* White text */
+    text-align: center !important; /* Centers the text */
+    text-decoration: none !important; /* Removes underline */
+    font-size: 14px !important; /* Smaller font size */
+    margin: 4px 2px !important;
+    transition-duration: 0.4s !important; /* Duration of the hover effect */
+    cursor: pointer !important; /* Changes the cursor when you hover over the button */
+    left: -30px !important; /* Moves the button 10 pixels to the left */
+
+}
+
+.trans-list {
+    height: 70vh !important;
+    margin-top: 16px;
+    font-size: 15px;
+}
+#transcriptions-list {
+    list-style-type: none !important; /* Remove default bullet points */
+    margin: 0 !important;
+    padding: 0px !important;
+    overflow-wrap: break-word !important; /* Breaks the word at the end of the line */
+    word-wrap: break-word !important; /* Same as overflow-wrap, for older browsers */
+    white-space: nowrap !important; /* Prevents the text from wrapping onto the next line */
+    overflow-x: hidden !important; /* Hides the horizontal scrollbar */
+    text-overflow: ellipsis !important; /* Adds an ellipsis when the text overflows */
+    flex-grow: 1 !important; /* This will make it expand to fill the space */
+    overflow-y: auto !important; /* Add scrollbar if content is too long */
+    background-color: #ffffff !important;
+    height: 98% !important;
+    border-radius: 7px;
+
+    
+}
+
+.selected {
+    background-color: #e0e0e0;
+}
+
+#transcriptions-list a {
+    display: block !important;
+    padding: 10px 20px 0 0 !important;
+    border-bottom: 1px solid #a1a1a1 !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    white-space: nowrap !important;
+    overflow: hidden !important; /* Ensures that the overflow text is hidden */
+    text-overflow: ellipsis !important; /* Adds an ellipsis to the end of the text */
+    margin-left: 10px;
+
+}
+
+#transcriptions-list a div:first-child {
+    font-family: 'Roboto', sans-serif !important; /* Use a modern font */
+    font-size: 1em !important; /* Adjust the font size */
+    font-weight: normal !important; /* Make the font weight normal */
+    line-height: 1.5 !important; /* Adjust the line height */
+    padding-right: 10px !important;
+    
+}
+
+#transcriptions-list a:last-child {
+    border-bottom: none !important; /* Remove border for the last item */
+}
+
+#transcriptions-list a:hover {
+    background-color: #f6f6f6 !important; /* Add a hover effect */
+}
+
+
+div#settingsButton {
+    display: flex !important;
+    justify-content: center !important;
+    bottom: 0px !important;
+}
+
+div#settingsButton button {
+    background-color: #1774ff !important; /* Green background */
+    border: none !important; /* Removes border */
+    color: white !important; /* White text */
+    text-align: center !important; /* Centers the text */
+    text-decoration: none !important; /* Removes underline */
+    font-size: 14px !important; /* Smaller font size */
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    transition-duration: 0.4s !important; /* Duration of the hover effect */
+    cursor: pointer !important; /* Changes the cursor when you hover over the button */
+    width: 80% !important;
+}
+
+div#settingsButton button:hover {
+    background-color: #245dd8 !important; /* Changes the background color when you hover over the button */
+}
+
+
+.filename {
+    color: #2c3e50; /* Dark blue color */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    font-size: 1.8em; /* Larger font size */
+    font-weight: 900; /* Heavier font weight */
+    text-transform: uppercase; /* Transform text to uppercase */
+    margin-bottom: 10px; /* Some space below the filename */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Show ellipsis when text overflows */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    width: 100%; /* Ensure the width fits the container */
+}
+
+
+.timestamp, .duration {
+    color: #757575; /* A more subtle shade of grey */
+    font-family: 'Roboto', sans-serif; /* A modern, clean font */
+    font-size: 0.75em; /* Slightly smaller text */
+    line-height: 1.6; /* More vertical spacing between lines */
+}
+#email {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    color: black;
+    font-size: 13px;
+    max-width: 150px;
+}

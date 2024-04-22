@@ -1,0 +1,17 @@
+
+:root {
+    /* Red Theme Color Variables */
+    --primary: #ff0000 !important; /* Red for primary elements */
+    --primary-hover: #cc0000 !important; /* Darker red for hover states */
+    --primary-focus: rgba(255, 0, 0, 0.2) !important; /* Translucent red for focus states */
+    --background-color: #ffeded !important; /* Light red background color */
+    --solo-scribe-color: #ff5f5f !important; /* Bright red for brand text */
+    --sidebar-bg-color: #8b0000 !important; /* Dark red background color for the sidebar */
+    --sidebar-text-color: #ffe5e5 !important; /* Light red text color for sidebar items */
+    --sidebar-hover-text-color: #ffdada !important; /* Lighter red for sidebar items on hover */
+    --file-upload-wrapper-border: 2px dashed #a33 !important; /* Red border for the file upload wrapper */
+    --file-upload-wrapper-bg-color: #ffcccc !important; /* Very light red background for the file upload area */
+    --file-upload-label-bg-color: #ffb3b3 !important; /* Soft red background for the upload label */
+    --file-upload-label-color: #8b0000 !important; /* Dark red text for the upload label */
+    --file-upload-instructions-color: #660000 !important; /* Darker red for instructional text */
+}

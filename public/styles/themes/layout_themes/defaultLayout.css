@@ -1,0 +1,54 @@
+:root {
+    /* Font and Layout Variables */
+    --body-font-family: 'Arial', sans-serif;
+    --overflow-setting: hidden;
+    --body-padding: 15px !important;
+    --header-padding-top: 0.5rem !important;
+    --header-padding-bottom: 0.5rem !important;
+    --container-fluid-justify: space-between;
+    --container-fluid-padding: 0rem;
+    --container-max-width: 1200px;
+    --container-margin: 0 auto;
+    --container-padding: 1rem;
+    --container-max-height: 90vh;
+    --container-overflow: hidden;
+
+    
+    /* Sidebar Variables */
+    --sidebar-height: 100%;
+    --sidebar-width-initial: 0;
+    --sidebar-padding-top: 60px;
+    --sidebar-transition: 0.5s;
+    --sidebar-width-open: 250px;
+  
+    /* Main Content Layout Variables */
+    --main-margin-left-open: 250px;
+    --main-transition: margin-left 0.5s;
+    --main-padding: 16px;
+  
+    /* Grid System Variables */
+    --grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    --grid-gap: 1rem;
+  
+    /* Transcription Controls Variables */
+    --transcription-controls-justify: space-between;
+    --transcription-controls-padding: 1rem;
+    --transcription-button-flex-basis: calc(25% - 20px);
+    --transcription-button-margin: 0 10px;
+    --transcription-button-padding: 10px;
+  
+    /* Upload Section Variables */
+    --upload-section-text-align: center;
+    --file-upload-wrapper-display: inline-block;
+    --file-upload-wrapper-width: calc(100% - 40px);
+    --file-upload-wrapper-margin-top: 1rem;
+    --file-upload-wrapper-border-radius: 6px;
+    --file-upload-wrapper-padding: 20px;
+    --file-upload-label-display: inline-block;
+    --file-upload-label-padding: 10px 20px;
+    --file-upload-label-cursor: pointer;
+    --file-upload-label-border-radius: 6px;
+    --file-upload-label-transition: background-color 0.2s ease;
+    --file-upload-instructions-font-size: 0.9rem;
+    --file-upload-instructions-margin-top: 10px;
+  }

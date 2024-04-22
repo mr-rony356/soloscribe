@@ -1,0 +1,18 @@
+:root {
+    /* Sunset Glow Color Variables */
+    --primary: #fd9644 !important; /* Sunset orange for primary elements */
+    --primary-hover: #fc5c65 !important; /* Darker sunset red for hover states */
+    --primary-focus: rgba(253, 150, 68, 0.2) !important; /* Translucent sunset orange for focus states */
+    --background-color: #f9e0d9 !important; /* Light peach background color */
+    --solo-scribe-color: #f76b8a !important; /* Bright peach for brand text */
+    --sidebar-bg-color: #eb3b5a !important; /* Dark red background color for the sidebar */
+    --sidebar-text-color: #f9e0d9 !important; /* Light peach text color for sidebar items */
+    --sidebar-hover-text-color: #f76b8a !important; /* Lighter peach for sidebar items on hover */
+    --file-upload-wrapper-border: 2px dashed #fc5c65 !important; /* Sunset red border for the file upload wrapper */
+    --file-upload-wrapper-bg-color: #f9e0d9 !important; /* Very light peach background for the file upload area */
+    --file-upload-label-bg-color: #f76b8a !important; /* Soft peach background for the upload label */
+    --file-upload-label-color: #eb3b5a !important; /* Dark red text for the upload label */
+    --file-upload-instructions-color: #fa8231 !important; /* Darker orange for instructional text */
+    /* Remaining layout variables are unchanged and therefore omitted for brevity */
+  }
+  

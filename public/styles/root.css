@@ -1,0 +1,125 @@
+:root {
+
+    --primary: #4285F4 !important; 
+    --primary-hover: #3367D6 !important;
+    --primary-focus: rgba(66, 133, 244, 0.2) !important;
+    
+    --background-color: #FFFFFF !important;
+    
+    --solo-scribe-color: #4285F4 !important;
+    
+    --sidebar-bg-color: #FFFFFF !important;
+    --sidebar-text-color: #202124 !important;
+    --sidebar-hover-text-color: #4285F4 !important;
+    
+    --file-upload-wrapper-border: 2px dashed #DADCE0 !important;
+    --file-upload-wrapper-bg-color: #FFFFFF !important;
+    
+    --file-upload-label-bg-color: #FFFFFF !important;
+    --file-upload-label-color: #202124 !important;
+    
+    --file-upload-instructions-color: #5F6368 !important;
+    
+    --file-upload-border-color: #3367D6 !important; 
+    
+    --file-list-bg-color: #FFFFFF !important;
+    --file-list-border-color: #DADCE0 !important;
+    --file-list-text-color: #202124 !important;
+    
+    --file-list-alt-bg-color: #F8F9FA !important;
+    
+    --text-color: #202124 !important;
+    --secondary-text-color: #ffffff !important;
+    
+    --transcription-bg-color: #FFFFFF !important;
+    
+    --individual-transcription-bg-color: #F8F9FA !important;
+    
+    --settings-bg-color: #F8F9FA !important;
+    
+    --file-upload-button-hover-color: #3367D6 !important;
+    
+    --trashcan-color: #DB4437 !important;
+    
+    --sidebar-hover-color: #F4B400 !important;
+    
+    --primary-hover-color: #DB4437 !important;
+    
+    --primary-focus-color: rgba(66, 133, 244, 0.2) !important;
+   
+  
+    
+    --solo-scribe-padding-left: 275px !important;
+    --body-font-family: 'Arial', sans-serif !important;
+    --overflow-setting: hidden !important;
+    --body-padding: 1px 15px 15px 15px !important;
+    --header-padding-top: 0.5rem !important;
+    --header-padding-bottom: 0.5rem !important;
+  
+    --mainContainer-width: calc(100% - 250px) !important;
+  
+    --container-fluid-justify: space-between !important;
+    --container-fluid-padding: 0rem !important;
+    --container-max-width: calc(100vw - 275px) !important;
+    --container-max-height: none !important;
+    --container-margin: 0 auto !important;
+    --container-padding: 1rem !important;
+    --container-overflow: unset !important;
+    --overflow-setting: unset;
+    
+
+    
+    --main-margin-left-open: 250px !important;
+    --main-transition: margin-left 0.5s !important;
+    --main-padding: 16px !important;
+    
+    
+    --grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+    --grid-gap: 1rem !important;
+    
+    
+    --transcription-controls-justify: space-between !important;
+    --transcription-controls-padding: 1rem !important;
+    --transcription-button-flex-basis: calc(25% - 20px) !important;
+    --transcription-button-margin: 0 10px !important;
+    --transcription-button-padding: 10px !important;
+    
+    
+    --upload-section-text-align: center !important;
+    
+    --file-upload-wrapper-display: inline-block !important;
+    --file-upload-wrapper-width: calc(100% - 40px) !important;
+    --file-upload-wrapper-margin-top: 1rem !important;
+    --file-upload-wrapper-border-radius: 6px !important;
+    --file-upload-wrapper-padding: 20px !important;
+    --file-upload-label-display: inline-block !important;
+    --file-upload-label-padding: 10px 20px !important;
+    --file-upload-label-cursor: pointer !important;
+    --file-upload-label-border-radius: 6px !important;
+    --file-upload-label-transition: background-color 0.2s ease !important;
+    --file-upload-instructions-font-size: 0.9rem !important;
+    --file-upload-instructions-margin-top: 10px !important;
+  }
+
+
+  /* This applies to all scrollable elements */
+::-webkit-scrollbar {
+    width: 8px; /* For vertical scrollbars */
+    height: 8px; /* For horizontal scrollbars */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d3d3d3;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

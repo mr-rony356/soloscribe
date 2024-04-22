@@ -1,0 +1,182 @@
+/* mobile.css - Responsive design overrides for mobile devices */
+
+@import url('https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css');
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: hidden !important; /* disables scrolling */
+    position: fixed !important; /* keeps the body in place */
+    width: 100% !important; /* full width */
+    height: 100% !important; /* full height */
+    padding: 0 !important;
+  }
+
+    body > header,
+    .solo-scribe {
+      padding-left: 0 !important; /* Remove padding for mobile header */
+      margin-left: 0 !important; /* Remove margin for mobile header */
+    }
+
+    nav.container-fluid ul {
+      display: flex !important;
+      justify-content: start !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+
+    li.solo-scribe {
+      /* Other styles... */
+      padding-left: 20px !important; /* This shifts the word 20px to the right */
+      left: 0px !important; /* This shifts the word 20px to the right */
+      /* Other styles... */
+    }
+
+    #newTranButton button {
+      position: relative !important;
+      top: -40px !important; /* Adjust as needed */
+      background-color: #3367D6; /* Green background */
+      border: none !important; /* Removes border */
+      color: white !important; /* White text */
+      padding: 5px 12px !important; /* Padding around the text */
+      text-align: center !important; /* Centers the text */
+      text-decoration: none !important; /* Removes underline */
+      font-size: 12px !important; /* Smaller font size */
+      margin: 4px 2px !important;
+      transition-duration: 0.4s !important; /* Duration of the hover effect */
+      cursor: pointer !important; /* Changes the cursor when you hover over the button */
+      left: 270px !important; /* Moves the button 10 pixels to the left */
+    }
+
+    .container-fluid {
+      display: flex;
+      width: 100%; /* Ensures the container spans the full width of the viewport */
+      padding: 0; /* Removes any padding */
+      margin: 0; /* Removes any margins */
+    }
+
+    /* Style adjustments for the trans-controls container */
+    .trans-controls {
+      display: flex !important; /* Use flex layout */
+      justify-content: center !important; /* Center items horizontally */
+      align-items: center !important; /* Center items vertically */
+      flex-direction: row !important; /* Layout buttons in a row */
+      flex-wrap: wrap !important; /* Allow items to wrap as needed */
+      gap: 10px; /* Spacing between buttons */
+      padding: 10px 0 !important; /* Vertical padding for the container */
+      list-style: none; /* Remove list styles */
+      margin: 0 auto; /* Center the list in the available space */
+    }
+
+  /* Style adjustments for each button within the trans-controls */
+    .trans-controls button {
+      flex: 0 0 auto !important; /* Do not grow or shrink */
+      border-radius: 50% !important; /* Circular buttons */
+      width: 50px !important; /* Fixed width */
+      height: 50px !important; /* Fixed height */
+      margin: 5px !important; /* Margin around buttons */
+      display: flex !important; /* Use flex for centering content */
+      justify-content: center !important; /* Center content horizontally */
+      align-items: center !important; /* Center content vertically */
+      padding: 0 !important; /* Remove padding */
+    }
+
+    .container-fluid,
+    #mainContainer,
+    .grid {
+      display: block !important; /* Stack elements vertically */
+    }
+
+    #mainContainer {
+      max-height: none !important; /* Remove max-height restriction */
+      width: 100% !important; /* Full width */
+      overflow: visible !important; /* Allow overflow */
+      border-radius: 0 !important; /* Remove border radius */
+      padding: 1em !important; /* Adjust padding */
+      box-sizing: border-box !important;
+      left: 0 !important; /* Align to the left edge */
+      overflow-x: hidden !important;
+    }
+
+    #mainContainer #newTranscription,
+    #mainContainer #individualTranscription,
+    #mainContainer #settings {
+      display: flex !important;
+      justify-content: center !important;
+      flex-direction: column !important; /* Stack children vertically */
+      align-items: center !important;
+      width: 100% !important; /* Full width for container elements */
+      min-height: auto !important; /* Remove minimum height */
+      padding: 1em !important; /* Adjust padding */
+      border: 1px solid var(--file-upload-border-color) !important; /* Adjust border */
+    }
+
+
+    .sidebar {
+      display: flex !important; /* Hide sidebar by default */
+      position: fixed !important;
+      top: 0 !important;
+      left: -250px !important; /* Align with the left edge of the viewport */
+      width: 250px !important; /* Sidebar's width */
+      height: 100% !important;
+      background: #6b6b6b !important; /* Sidebar background color */
+      z-index: 1000 !important;
+      overflow-y: auto !important;
+      transition: left 0.3s ease-in-out !important;
+    }
+
+    .sidebar-cover {
+      display: none !important; /* Hidden by default */
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      background: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent background */
+      z-index: 999 !important; /* Below the sidebar but above other content */
+      transition: opacity 0.3s ease-in-out !important;
+    }
+
+    .sidebar.open {
+      left: 0 !important; /* Bring sidebar into view */
+      display: flex !important; /* Ensure it's visible */
+    }
+
+    .sidebar-cover.open {
+      display: block !important; /* Show the cover */
+    }
+
+
+    .transcription-controls {
+      display: flex !important;
+      width: 100% !important; /* Full width */
+      justify-content: center !important; /* Center align buttons */
+      gap: 10px !important; /* adjust this value to increase or decrease the space between buttons */
+    }
+
+    .transcription-controls button img {
+      width: 50px !important; /* Adjust image size */
+      height: auto !important;
+      margin-bottom: 0.5em !important;
+      padding: 5px !important; /* Adjust padding */
+    }
+
+    .upload-section,
+    .file-upload-wrapper,
+    .file-upload-label,
+    .file-upload-instructions,
+    #file-list {
+      text-align: center !important; /* Center align text */
+      width: 100% !important; /* Full width for upload elements */
+      margin-top: 0.5em !important; /* Adjust top margin */
+      border-radius: 0 !important; /* Remove border radius */
+      padding: 0.5em !important; /* Adjust padding */
+    }
+
+    .trans-list,
+    #transcriptions-list {
+      height: auto !important; /* Remove fixed height */
+      overflow-y: visible !important; /* Allow normal overflow */
+    }
+ }
+
+

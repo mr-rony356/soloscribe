@@ -1,0 +1,117 @@
+/*============== Login/Signup ==============*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Popup styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 999;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Input group styles */
+.input-group {
+    position: relative;
+    margin: 20px auto;
+    /* Vertical margin of 20px, horizontal auto for centering */
+    width: 80%;
+    /* Width relative to its parent */
+    box-sizing: border-box;
+    /* Padding and border will be included in width */
+}
+
+.input-icon {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    /* Makes the icon non-interactive */
+}
+
+/* Auth form styles */
+.auth-form {
+    width: 100%;
+    text-align: center;
+    /* Center the inline and inline-block content */
+}
+
+.auth-form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    padding-left: 40px;
+    /* Make room for the icon */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Auth form styles */
+.auth-form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 30px;
+    /* Make room for the icon */
+}
+
+/* Auth button styles */
+.auth-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+/* Switch button */
+.switch-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+}
+
+
+
+/* Google button styles */
+.google-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    /* Remove focus border */
+}
+
+.google-button img {
+    display: block;
+    width: 100%;
+}

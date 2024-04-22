@@ -1,0 +1,16 @@
+:root {
+    --primary: #f1c40f !important;
+    --primary-hover: #f39c12 !important;
+    --primary-focus: rgba(241, 196, 15, 0.2) !important;
+    --background-color: #fef9e7 !important;
+    --solo-scribe-color: #f7dc6f !important;
+    --sidebar-bg-color: #f1c40f !important;
+    --sidebar-text-color: #fef9e7 !important;
+    --sidebar-hover-text-color: #f7dc6f !important;
+    --file-upload-wrapper-border: 2px dashed #f1c40f !important;
+    --file-upload-wrapper-bg-color: #fef9e7 !important;
+    --file-upload-label-bg-color: #f7dc6f !important;
+    --file-upload-label-color: #f1c40f !important;
+    --file-upload-instructions-color: #f39c12 !important;
+  }
+  
