@@ -1,0 +1,39 @@
+firebase.js:4 Starting Firebase modules import.
+firebase.js:19 Firebase app initialized successfully.
+firebase.js:26 Firebase services initialized successfully.
+login.js:9 2024-02-24T17:23:38.355Z - Initialized all required variables.
+login.js:95 Debug: Initialized login and logout buttons
+login.js:174 Debug: User logged in
+firebase.js:59 Query Snapshot: im {_firestore: Pg, _delegate: My}
+firebase.js:62 Transcriptions List: <div id=​"transcriptions-list">​No transcriptions available.​</div>​
+firebase.js:67 No transcriptions found.
+login.js:101 Debug: User logged out successfully
+login.js:193 Debug: User not logged in
+Third-party cookie will be blocked. Learn more in the Issues tab.
+Third-party cookie will be blocked. Learn more in the Issues tab.
+Third-party cookie will be blocked. Learn more in the Issues tab.
+Third-party cookie will be blocked. Learn more in the Issues tab.
+Third-party cookie will be blocked. Learn more in the Issues tab.
+Third-party cookie will be blocked. Learn more in the Issues tab.
+utils.js:249 Cross-Origin-Opener-Policy policy would block the window.close call.
+ii @ utils.js:249
+(anonymous) @ auth.js:821
+e.g @ promise.js:826
+Ce @ promise.js:1166
+Oe @ promise.js:1140
+t.gc @ promise.js:1111
+le @ run.js:124
+Show 5 more frames
+Show less
+utils.js:249 Cross-Origin-Opener-Policy policy would block the window.close call.
+ii @ utils.js:249
+(anonymous) @ auth.js:821
+e.g @ promise.js:826
+Ce @ promise.js:1166
+Oe @ promise.js:1140
+t.gc @ promise.js:1111
+le @ run.js:124
+Show 5 more frames
+Show less
+login.js:9 2024-02-24T17:23:46.196Z - Error during Google Login: db.collection is not a function
+login.js:174 Debug: User logged in

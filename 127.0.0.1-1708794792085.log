@@ -1,0 +1,9 @@
+firebase.js:4 Starting Firebase modules import.
+firebase.js:19 Firebase app initialized successfully.
+firebase.js:26 Firebase services initialized successfully.
+login.js:9 2024-02-24T17:13:00.545Z - Initialized all required variables.
+login.js:95 Debug: Initialized login and logout buttons
+login.js:170 Debug: User logged in
+firebase.js:59 Query Snapshot: im {_firestore: Pg, _delegate: My}
+firebase.js:62 Transcriptions List: <div id=​"transcriptions-list">​No transcriptions available.​</div>​
+firebase.js:67 No transcriptions found.
